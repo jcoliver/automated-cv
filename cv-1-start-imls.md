@@ -30,7 +30,7 @@ GitHub: jcoliver | ORCiD: 0000-0003-2160-1086\\
 \end{center}
 
 ## Chronology of Employment
-Unit Lead, Data Cooperative \hfill July 2021 - present
+Unit Lead, Data Cooperative \hfill July 2021 - present  
 Research Engagement, University Libraries  
 University of Arizona, Tucson, Arizona
 

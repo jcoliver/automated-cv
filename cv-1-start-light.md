@@ -29,7 +29,7 @@ GitHub: jcoliver | Twitter: @jcoliverAZ\\
 
 ### Employment
 
-Unit Lead, Data Cooperative \hfill July 2021 - present
+Unit Lead, Data Cooperative \hfill July 2021 - present  
 Research Engagement, University Libraries \hfill University of Arizona, Tucson, Arizona
 
 Specialist, Data Science \hfill August 2017 - present  

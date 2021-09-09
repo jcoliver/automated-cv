@@ -47,7 +47,7 @@ University of California, Berkeley \hfill 1993 - 1995
 Transferred to University of California, Davis in 1995
 
 ### Chronology of Employment
-Unit Lead, Data Cooperative \hfill July 2021 - present
+Unit Lead, Data Cooperative \hfill July 2021 - present  
 Research Engagement, University Libraries  
 University of Arizona, Tucson, Arizona
 
