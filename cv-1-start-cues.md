@@ -21,17 +21,21 @@ colorlinks: false
 
 \begin{center}
 \textbf{Jeffrey C. Oliver}\\
-Office of Digital Innovation \& Stewardship\\
+Research Engagement\\
 University Libraries\\
 University of Arizona\\
 Tucson, AZ 85721\\
-520.626.9215\\
-jcoliver@email.arizona.edu\\
+520.626.9215 | jcoliver@arizona.edu\\
+GitHub: jcoliver | ORCiD: 0000-0003-2160-1086\\
 \end{center}
 
 ### Chronology of Employment
+Unit Lead, Data Cooperative \hfill July 2021 - present
+Research Engagement, University Libraries  
+University of Arizona, Tucson, Arizona
+
 Specialist, Data Science \hfill August 2017 - present  
-Office of Digital Innovation \& Stewardship, University Libraries  
+Research Engagement, University Libraries  
 University of Arizona, Tucson, Arizona
 
 Specialist, Bioinformationist \hfill June 2015 - August 2017  
