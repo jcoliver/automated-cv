@@ -14,7 +14,7 @@
 
 # Indication of which files to use for start and end of CV
 # possible values: csp, light, cues, imls, ul
-VERSION="ul"
+VERSION="imls"
 
 # Only want full list of publications for some versions
 if [[ "$VERSION" == "light" ]] || [[ "$VERSION" == "csp" ]] || [[ "$VERSION" == "ul" ]]
