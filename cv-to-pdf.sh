@@ -13,11 +13,11 @@
 # cv-2-publications.md)
 
 # Indication of which files to use for start and end of CV
-# possible values: csp, light, cues, imls, ul
-VERSION="imls"
+# possible values: csp, light, cues, imls, ul, long
+VERSION="long"
 
 # Only want full list of publications for some versions
-if [[ "$VERSION" == "light" ]] || [[ "$VERSION" == "csp" ]] || [[ "$VERSION" == "ul" ]]
+if [[ "$VERSION" == "light" ]] || [[ "$VERSION" == "csp" ]] || [[ "$VERSION" == "ul" ]] || [[ "$VERSION" == "long" ]]
 then
   # TEXTFILE="cv-2-publications.txt"
   # First create text version of publications
