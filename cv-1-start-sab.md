@@ -2,8 +2,6 @@
 header-includes:
 - \usepackage{fancyhdr}
 - \pagestyle{fancy}
-- \fancyhead[LO,LE]{Section 4{:} Curriculum Vitae and list of collaborators}
-- \fancyhead[RO,RE]{Jeffrey C. Oliver}
 - \renewcommand{\headrulewidth}{0pt}
 - \usepackage{fontspec}
 - \setmainfont{Latin Modern Roman}
@@ -25,7 +23,7 @@ Research Engagement
 University Libraries\\
 University of Arizona\\
 Tucson, AZ 85721\\
-520.626.9215 | jcoliver@email.arizona.edu\\
+520.626.9215 | jcoliver@arizona.edu\\
 GitHub: jcoliver | ORCiD: 0000-0003-2160-1086\\
 \end{center}
 
@@ -68,27 +66,33 @@ Department of Evolution and Ecology
 Yale University, New Haven, Connecticut
 
 ### Service
-Extramural  
-2021 - 2023  Secretary [elected], Carpentries Trainers Leadership Committee
-2019 - 2021  Member [appointed], Library Carpentry Advisory Group  
-2018 - 2022  Maintainer [appointed], Software Carpentry R for Reproducible Scientific Analyses lesson  
-2017 - present	Instructor trainer [appointed], The Carpentries  
+#### Extramural  
+\begin{itemize}[leftmargin=0cm]
+\item[] 2021 - 2023  Secretary [elected], Carpentries Trainers Leadership Committee
+\item[] 2019 - 2021  Member [appointed], Library Carpentry Advisory Group  
+\item[] 2018 - 2022  Maintainer [appointed], Software Carpentry R for Reproducible Scientific Analyses lesson  
+\item[] 2017 - present	Instructor trainer [appointed], The Carpentries  
+\end{itemize}
 
-University of Arizona  
-2022 - present  Member, \textit{ex officio} [appointed], Graduate Council
-2016 - 2019	 Member [appointed], University Career Architecture Project  
-2018  Member [appointed], Health Sciences Strategic Plan Advisory Committee  
+#### University of Arizona  
+\begin{itemize}[leftmargin=0cm]
+\item[] 2022 - present  Member, \textit{ex officio} [appointed], Graduate Council  
+\item[] 2016 - 2019	 Member [appointed], University Career Architecture Project  
+\item[] 2018  Member [appointed], Health Sciences Strategic Plan Advisory Committee  
+\end{itemize}
 
-University Libraries  
-2023  Chair [elected], Library Faculty Assembly
-2021 - 2022 Chair [appointed], Search committee, Digital Scholarship Specialist/Librarian
-2020 - 2022 Member [elected], University Libraries Continuing Status & Promotion Committee  
-2020  Member [appointed], Search committee, Program Coordinator  
-2019 - 2020 Member [elected], University Libraries LFA Sabbatical Committee
-2019  Member [appointed], Search committee, Director, CATalyst Studios  
-2018  Member [appointed], Search committee, Analytics & Assessment Librarian  
-2016 - 2017	Member [elected], University Libraries LFA Bylaws & Standing Rules Committee  
-2015 - 2016	Member [appointed], Communications Council  
-2015 - 2016	Member [appointed], UAHSL Kitchen Cabinet  
-2016	Member [appointed], Search committee, Associate Director, User Experience  
+#### University Libraries  
+\begin{itemize}[leftmargin=0cm]
+\item[] 2023  Chair [elected], Library Faculty Assembly  
+\item[] 2021 - 2022  Chair [appointed], Search committee, Digital Scholarship Specialist/Librarian  
+\item[] 2020 - 2022  Member [elected], University Libraries Continuing Status \& Promotion Committee  
+\item[] 2020  Member [appointed], Search committee, Program Coordinator  
+\item[] 2019 - 2020  Member [elected], University Libraries LFA Sabbatical Committee  
+\item[] 2019  Member [appointed], Search committee, Director, CATalyst Studios  
+\item[] 2018  Member [appointed], Search committee, Analytics \& Assessment Librarian  
+\item[] 2016 - 2017	 Member [elected], University Libraries LFA Bylaws \& Standing Rules Committee  
+\item[] 2015 - 2016	 Member [appointed], Communications Council  
+\item[] 2015 - 2016	 Member [appointed], UAHSL Kitchen Cabinet  
+\item[] 2016  Member [appointed], Search committee, Associate Director, User Experience  
+\end{itemize}
 
