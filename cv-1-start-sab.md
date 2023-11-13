@@ -19,7 +19,7 @@ colorlinks: true
 
 \begin{center}
 \textbf{Jeffrey C. Oliver}\\
-Research Engagement
+Research Engagement\\
 University Libraries\\
 University of Arizona\\
 Tucson, AZ 85721\\
@@ -28,7 +28,6 @@ GitHub: jcoliver | ORCiD: 0000-0003-2160-1086\\
 \end{center}
 
 ### Chronology of Education
-
 University of Arizona \hfill 2002 - 2007  
 Ph.D. Graduate Interdisciplinary Program in Insect Science  
 Thesis title: Population, Phylogenetic, and Coalescent Analyses of Character  
@@ -83,9 +82,9 @@ Yale University, New Haven, Connecticut
 
 #### University Libraries  
 \begin{itemize}[leftmargin=0cm]
-\item[] 2023  Chair [elected], Library Faculty Assembly  
+\item[] 2023  Chair [elected], Library Faculty Assembly (LFA)  
 \item[] 2021 - 2022  Chair [appointed], Search committee, Digital Scholarship Specialist/Librarian  
-\item[] 2020 - 2022  Member [elected], University Libraries Continuing Status \& Promotion Committee  
+\item[] 2020 - 2022  Member [elected], University Libraries LFA Continuing Status \& Promotion Committee  
 \item[] 2020  Member [appointed], Search committee, Program Coordinator  
 \item[] 2019 - 2020  Member [elected], University Libraries LFA Sabbatical Committee  
 \item[] 2019  Member [appointed], Search committee, Director, CATalyst Studios  

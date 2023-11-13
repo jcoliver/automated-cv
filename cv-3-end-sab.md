@@ -17,3 +17,17 @@
 \item[] \textbf{Oliver, J. C.}, Magle, T., Grappone, T., Erdmann, C. Goldman, J. \& Dennis, T. (2019) Supporting data science through the academic library. \textit{Digital Library Federation Forum}. Tampa, Florida.
 \item[] Nichols, J. T., \& \textbf{Oliver, J. C.} (2018). Sustaining communities of practice in digital scholarship and data science. \textit{Digital Library Federation Forum}. Las Vegas, Nevada.
 \item[] O'Meara, E., Nichols, J. T., \& \textbf{Oliver, J. C.} (2018). Encouraging Convergence in the Libraries: Intersections of Data Science and Digital Humanities through Grassroots Collaboration. \textit{Coalition for Networked Information Spring Membership Meeting}. San Diego, California. \end{itemize}
+
+### Awarded Grants and Contracts
+
+#### Federal  
+\begin{itemize}[leftmargin=0cm]
+\item[] Collaborative Research: HDR DSC: Building Capacity in Data Science through Biodiversity, Conservation, and General Education. Kathleen Prudic (PI), \textbf{Jeffrey Oliver (Co-PI)} (33\% effort), Ellen Bledsoe (Co-PI). National Science Foundation Award \#2122967. Total awarded \$867,145.
+\end{itemize}
+
+### Submitted Grants/Contracts
+
+#### Federal
+\begin{itemize}[leftmargin=0cm]
+\item[] The Data Science and Digital Scholarship Fellowship Program (DS2F): A library-based model for addressing curricular gaps in data-intensive training and digital pedagogy. \textbf{Jeffrey Oliver (PI)} (50\% effort), Megan Senseney (Co-PI). Institute of Museum \& Library Services. Total requested \$252,528. Unfunded.
+\end{itemize}

@@ -65,7 +65,11 @@ then
   sed -i 's/(riley)/(Riley)/g' $TEXTFILE
   sed -i 's/Ecological archives/Ecological Archives/g' $TEXTFILE
   sed -i 's/california/California/g' $TEXTFILE
+  sed -i 's/arizona/Arizona/g' $TEXTFILE
   sed -i 's/batesian mimic/Batesian mimic/g' $TEXTFILE
+  sed -i 's/american/American/g' $TEXTFILE
+  sed -i 's/palmer/Palmer/g' $TEXTFILE
+  sed -i 's/lehman/Lehman/g' $TEXTFILE
 
   # Stitch the sections together to create single file
   cat cv-1-start-$VERSION.md $TEXTFILE cv-3-end-$VERSION.md > cv-full.md
