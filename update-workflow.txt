@@ -1,0 +1,9 @@
+0. LaTeX header
+1. Name, affiliation, etc.
+2. Education
+3. Employment
+4. Service
+5. Publications
+6. Other works
+7. Presentations
+8. Grants
