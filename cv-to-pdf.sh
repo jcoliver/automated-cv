@@ -10,14 +10,35 @@
 # texlive-xelatex
 
 # Make sure bib/publications.bib and apa-cv.csl exist (they are referenced by
-# cv-2-publications.md)
+# cv-5-publications.md)
 
 # Indication of which files to use for start and end of CV
-# possible values: csp, light, cues, imls, ul, long, sab
+# possible values: csp, long, sab
 VERSION="sab"
 
+# Start by creating variable that holds header information
+if [[ "$VERSION" == "csp" ]]
+then
+  # CS&P has special yaml header which includes header information
+  HEADERFILE="cv-0-yaml-csp.md"
+else
+  # Other versions do not have header
+  HEADERFILE="cv-0-yaml.md"
+fi
+
+# Add the yaml header to the next few sections
+NEWLINE="\n"
+# the - in the cat command reads standard input as first argument
+# TODO: would be nice to do this in one line...
+echo -e $NEWLINE | cat $HEADERFILE cv-1-name.md - cv-2-education.md > cv-tmp-1.md
+echo -e $NEWLINE | cat cv-tmp-1.md - cv-3-employment.md > cv-tmp-2.md
+echo -e $NEWLINE | cat cv-tmp-2.md - cv-4-service.md > cv-tmp-3.md
+
+rm cv-tmp-1.md
+rm cv-tmp-2.md
+
 # Only want full list of publications for some versions
-if [[ "$VERSION" == "light" ]] || [[ "$VERSION" == "csp" ]] || [[ "$VERSION" == "ul" ]] || [[ "$VERSION" == "long" ]]  || [[ "$VERSION" == "sab" ]]
+if [[ "$VERSION" == "csp" ]] || [[ "$VERSION" == "long" ]] || [[ "$VERSION" == "sab" ]]
 then
   # TEXTFILE="cv-2-publications.txt"
   # First create text version of publications
@@ -27,7 +48,7 @@ then
   # Workaround is to create temporary tex file and then convert to md
   TEXFILE="tmp-pubs.tex"
   TEXTFILE="tmp-pubs.md"
-  pandoc -f markdown cv-2-publications.md -o $TEXFILE --csl=apa-cv.csl --bibliography=bib/publications.bib --filter=pandoc-citeproc
+  pandoc -f markdown cv-5-publications.md -o $TEXFILE --csl=apa-cv.csl --bibliography=bib/publications.bib --filter=pandoc-citeproc
   pandoc $TEXFILE -o $TEXTFILE
 
   # Run sed in place to bold all occurrences of Oliver, J. C.
@@ -71,19 +92,41 @@ then
   sed -i 's/palmer/Palmer/g' $TEXTFILE
   sed -i 's/lehman/Lehman/g' $TEXTFILE
 
-  # Stitch the sections together to create single file
-  cat cv-1-start-$VERSION.md $TEXTFILE cv-3-end-$VERSION.md > cv-full.md
+# TODO: Need to add asterisk to pubs done as graduate student. Only really 
+# necessary for CS&P
+
+  # Write what we have so far to file
+  echo -e $NEWLINE | cat cv-tmp-3.md - $TEXTFILE > cv-tmp-4.md
 
   # Remove temporary text file of publications
   rm $TEXTFILE
   rm $TEXFILE
 else
   # cues & imls have abbreviated publications, following expertise section
-  cat cv-1-start-$VERSION.md cv-2-middle-$VERSION.md cv-3-end-$VERSION.md > cv-full.md
+  echo -e $NEWLINE | cat cv-tmp-3.md - cv-5-publications-ten.md > cv-tmp-4.md
+fi
+
+rm cv-tmp-3.md
+
+# Add remaining sections
+echo -e $NEWLINE | cat cv-tmp-4.md - cv-6-other-works.md > cv-tmp-5.md
+echo -e $NEWLINE | cat cv-tmp-5.md - cv-7-presentations.md > cv-tmp-6.md
+
+rm cv-tmp-4.md
+rm cv-tmp-5.md
+
+# CS&P version has collaborators
+if [[ "$VERSION" == "csp" ]] || [[ "$VERSION" == "sab" ]]
+then
+  echo -e $NEWLINE | cat cv-tmp-6.md - cv-8-collaborators.md > cv-tmp-7.md
+  # Some funkyness here, where we overwrite temp file 6, to avoid writing an 
+  # else statement to deal with versions that don't need collaborators/grants
+  echo -e $NEWLINE | cat cv-tmp-7.md - cv-9-grants.md > cv-tmp-6.md
+  rm cv-tmp-7.md
 fi
 
 # Use pandoc to create pdf
-pandoc -f markdown cv-full.md -o OliverJC-CV-$VERSION.pdf --pdf-engine=xelatex
+pandoc -f markdown cv-tmp-6.md -o OliverJC-CV-$VERSION.pdf --pdf-engine=xelatex
 
 # Remove temporary markdown CV
-rm cv-full.md
+rm cv-tmp-6.md

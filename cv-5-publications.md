@@ -5,5 +5,6 @@ nocite: '[@*]'
 csl: 'apa-cv.csl'
 ---
 
-### Peer-reviewed publications
+## Peer-reviewed publications
+
 <div id="refs"></div>

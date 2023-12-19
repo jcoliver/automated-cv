@@ -1,5 +1,5 @@
-
 ## Ten relevant publications
+
 \begin{itemize}[leftmargin=0cm]
 \item[] \textbf{Oliver JC} and McNeil T. 2021. Undergraduate data science degrees emphasize computer science and statistics but fall short in ethics training and domain-specific context. \textit{PeerJ Computer Science}. 7:e441.
 \item[] \textbf{Oliver JC}, Kollen C, Hickson B, and Rios F. 2019. Data science support at the academic library. \textit{Journal of Library Administration}. 59:241-257.
