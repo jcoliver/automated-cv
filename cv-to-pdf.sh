@@ -14,7 +14,7 @@
 
 # Indication of which files to use for start and end of CV
 # possible values: csp, long, sab
-VERSION="sab"
+VERSION="csp"
 
 # Start by creating variable that holds header information
 if [[ "$VERSION" == "csp" ]]
@@ -53,6 +53,12 @@ then
 
   # Run sed in place to bold all occurrences of Oliver, J. C.
   sed -i 's/Oliver, J. C./\*\*Oliver, J. C.\*\*/g' $TEXTFILE
+  # Multi-line breaks requires these hacks...
+  # Assumes lines starting with J. C. or C. will *always* be part of citation
+  sed -i 's/Oliver,$/\*\*Oliver,\*\*/g' $TEXTFILE
+  sed -i 's/^J. C./\*\*J. C.\*\*/g' $TEXTFILE
+  sed -i 's/Oliver, J.$/\*\*Oliver, J.\*\*/g' $TEXTFILE
+  sed -i 's/^C./\*\*C.\*\*/g' $TEXTFILE
 
   # Also sed to get name added for BioTIME paper
   sed -i 's/others. (2018). BioTIME/\*\*Oliver, J. C.\*\* and 263 additional authors. (2018). BioTIME/g' $TEXTFILE
@@ -70,10 +76,14 @@ then
   sed -i 's/cotesia theclae/\*Cotesia theclae\*/g' $TEXTFILE
   sed -i 's/rana aurora/\*Rana aurora\*/g' $TEXTFILE
   sed -i 's/draytonii/\*draytonii\*/g' $TEXTFILE
+  sed -i 's/ambystoma californiense/\*Ambystoma californiense\*/g' $TEXTFILE
 
-  # One known case of breaking over a line
+  # One known case of breaking over a line (but depends on margins...?)
   sed -i 's/ambystoma$/\*Ambystoma\*/g' $TEXTFILE
   sed -i 's/^californiense/\*californiense\*/g' $TEXTFILE
+  sed -i 's/rana$/\*Rana\*/g' $TEXTFILE
+  sed -i 's/^aurora/\*aurora\*/g' $TEXTFILE
+  
 
   # Italicize and capitalize bicyclus
   sed -i 's/bicyclus/\*Bicyclus\*/g' $TEXTFILE
