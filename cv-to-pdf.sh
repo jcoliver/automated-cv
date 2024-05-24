@@ -55,6 +55,7 @@ then
   sed -i 's/Oliver, J. C./\*\*Oliver, J. C.\*\*/g' $TEXTFILE
   # Multi-line breaks requires these hacks...
   # Assumes lines starting with J. C. or C. will *always* be part of citation
+  # Tried whitespace matches, but sed doesn't recognize newline as whitespace
   sed -i 's/Oliver,$/\*\*Oliver,\*\*/g' $TEXTFILE
   sed -i 's/^J. C./\*\*J. C.\*\*/g' $TEXTFILE
   sed -i 's/Oliver, J.$/\*\*Oliver, J.\*\*/g' $TEXTFILE
@@ -78,13 +79,12 @@ then
   sed -i 's/draytonii/\*draytonii\*/g' $TEXTFILE
   sed -i 's/ambystoma californiense/\*Ambystoma californiense\*/g' $TEXTFILE
 
-  # One known case of breaking over a line (but depends on margins...?)
+  # Some cases of breaking over a line (but depends on margins)
   sed -i 's/ambystoma$/\*Ambystoma\*/g' $TEXTFILE
   sed -i 's/^californiense/\*californiense\*/g' $TEXTFILE
   sed -i 's/rana$/\*Rana\*/g' $TEXTFILE
   sed -i 's/^aurora/\*aurora\*/g' $TEXTFILE
-  
-
+ 
   # Italicize and capitalize bicyclus
   sed -i 's/bicyclus/\*Bicyclus\*/g' $TEXTFILE
 
@@ -102,8 +102,26 @@ then
   sed -i 's/palmer/Palmer/g' $TEXTFILE
   sed -i 's/lehman/Lehman/g' $TEXTFILE
 
-# TODO: Need to add asterisk to pubs done as graduate student. Only really 
-# necessary for CS&P
+  # TODO: Need to add asterisk to pubs done as graduate student. Only really 
+  # necessary for CS&P; eight citations at this point in $TEXTFILE, relevant 
+  # lines pasted below:
+  # []{#ref-oliver2011evolution} **Oliver, J. C.**, & Stein, L. R. (2011).
+  # []{#ref-oliver2008augist} **Oliver, J. C.** (2008). AUGIST: Inferring
+  # []{#ref-oliver2007parasitism} **Oliver, J. C.**, Prudic, K. L., & Pauly, G.
+  # []{#ref-oliver2007genetic} **Oliver, J. C.**, & Shapiro, A. M. (2007).
+  # []{#ref-c2006population} **Oliver, J. C.** (2006). Population genetic
+  # []{#ref-oliver2006boulder} **Oliver, J. C.**, Prudic, K. L., & Collinge, S.
+  # []{#ref-prudic2005soil} Prudic, K. L., **Oliver, J. C.**, & Bowers, M. D.
+  # []{#ref-collinge2003effects} Collinge, S. K., Prudic, K. L., & **Oliver,**
+  #   **J. C.** (2003). Effects of local habitat characteristics and landscape
+
+  # if [[ "$VERSION" == "csp" ]]
+  # then
+  #   sed 
+  # fi
+
+
+
 
   # Write what we have so far to file
   echo -e $NEWLINE | cat cv-tmp-3.md - $TEXTFILE > cv-tmp-4.md
