@@ -108,7 +108,7 @@ then
   sed -i 's/palmer/Palmer/g' $TEXTFILE
   sed -i 's/lehman/Lehman/g' $TEXTFILE
 
-  # TODO: Need to add asterisk to pubs done as graduate student. Only really 
+  # Need to add asterisk to pubs done as graduate student. Only really 
   # necessary for CS&P; eight citations at this point in $TEXTFILE, relevant 
   # lines pasted below:
   # []{#ref-oliver2011evolution} **Oliver, J. C.**, & Stein, L. R. (2011).
@@ -121,13 +121,17 @@ then
   # []{#ref-collinge2003effects} Collinge, S. K., Prudic, K. L., & **Oliver,**
   #   **J. C.** (2003). Effects of local habitat characteristics and landscape
 
-  # if [[ "$VERSION" == "csp" ]]
-  # then
-  #   sed 
-  # fi
-
-
-
+  if [[ "$VERSION" == "csp" ]]
+  then
+    sed -i 's/2011evolution} \*\*Oliver, J. C.\*\*/2011evolution} \*\*Oliver, J. C.\*\*\\\*/g' $TEXTFILE
+    sed -i 's/2008augist} \*\*Oliver, J. C.\*\*/2008augist} \*\*Oliver, J. C.\*\*\\\* (2008). AUGIST/g' $TEXTFILE  
+    sed -i 's/2007parasitism} \*\*Oliver, J. C.\*\*/2007parasitism} \*\*Oliver, J. C.\*\*\\\*/g' $TEXTFILE
+    sed -i 's/2007genetic} \*\*Oliver, J. C.\*\*/2007genetic} \*\*Oliver, J. C.\*\*\\\*/g' $TEXTFILE
+    sed -i 's/2006population} \*\*Oliver, J. C.\*\*/2006population} \*\*Oliver, J. C.\*\*\\\*/g' $TEXTFILE
+    sed -i 's/2006boulder} \*\*Oliver, J. C.\*\*/2006boulder} \*\*Oliver, J. C.\*\*\\\*/g' $TEXTFILE
+    sed -i 's/2005soil} Prudic, K. L., \*\*Oliver, J. C.\*\*/2005soil} Prudic, K. L., \*\*Oliver, J. C.\*\*\\\*/g' $TEXTFILE
+    sed -i 's/\*\*J. C.\*\* (2003). Effects of local/\*\*J. C.\*\*\\\* (2003). Effects of local/g' $TEXTFILE
+  fi
 
   # Write what we have so far to file
   echo -e $NEWLINE | cat cv-tmp-3.md - $TEXTFILE > cv-tmp-4.md
