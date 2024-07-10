@@ -16,6 +16,10 @@
 # possible values: csp, long, sab
 VERSION="csp"
 
+# Whether or not to include collaborators list
+# possible values = "true", "false"
+COLLABLIST="false"
+
 # Start by creating variable that holds header information
 if [[ "$VERSION" == "csp" ]]
 then
@@ -153,14 +157,17 @@ echo -e $NEWLINE | cat cv-tmp-5.md - cv-7-presentations.md > cv-tmp-6.md
 rm cv-tmp-4.md
 rm cv-tmp-5.md
 
-# CS&P version has collaborators
+# CS&P version has collaborators (sometimes)
 if [[ "$VERSION" == "csp" ]] || [[ "$VERSION" == "sab" ]]
 then
-  echo -e $NEWLINE | cat cv-tmp-6.md - cv-8-collaborators.md > cv-tmp-7.md
-  # Some funkyness here, where we overwrite temp file 6, to avoid writing an 
-  # else statement to deal with versions that don't need collaborators/grants
-  echo -e $NEWLINE | cat cv-tmp-7.md - cv-9-grants.md > cv-tmp-6.md
-  rm cv-tmp-7.md
+  if [[ "$COLLABLIST" == "true" ]]
+  then 
+    echo -e $NEWLINE | cat cv-tmp-6.md - cv-8-collaborators.md > cv-tmp-7.md
+    # Some funkyness here, where we overwrite temp file 6, to avoid writing an 
+    # else statement to deal with versions that don't need collaborators/grants
+    echo -e $NEWLINE | cat cv-tmp-7.md - cv-9-grants.md > cv-tmp-6.md
+    rm cv-tmp-7.md
+  fi  
 fi
 
 # Use pandoc to create pdf

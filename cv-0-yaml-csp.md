@@ -6,7 +6,7 @@ header-includes:
 - \fancyhead[RO,RE]{Jeffrey C. Oliver}
 - \renewcommand{\headrulewidth}{0pt}
 - \usepackage{fontspec}
-- \setmainfont{Latin Modern Roman}
+- \setmainfont{EB Garamond}
 - \usepackage{caption}
 - \usepackage{enumitem}
 - \DeclareCaptionLabelFormat{nolabel}{}
