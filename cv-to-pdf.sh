@@ -161,12 +161,16 @@ rm cv-tmp-5.md
 if [[ "$VERSION" == "csp" ]] || [[ "$VERSION" == "sab" ]]
 then
   if [[ "$COLLABLIST" == "true" ]]
-  then 
+  then # only include collaborators list if set
     echo -e $NEWLINE | cat cv-tmp-6.md - cv-8-collaborators.md > cv-tmp-7.md
     # Some funkyness here, where we overwrite temp file 6, to avoid writing an 
     # else statement to deal with versions that don't need collaborators/grants
     echo -e $NEWLINE | cat cv-tmp-7.md - cv-9-grants.md > cv-tmp-6.md
     rm cv-tmp-7.md
+  else
+    # this was the best you could do?
+    echo -e $NEWLINE | cat cv-tmp-6.md - cv-9-grants.md > cv-tmp-7.md
+    mv cv-tmp-7.md cv-tmp-6.md
   fi  
 fi
 
