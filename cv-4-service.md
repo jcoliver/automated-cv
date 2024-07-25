@@ -7,6 +7,9 @@ Member [appointed], Library Carpentry Advisory Group \hfill 2019 - 2021
 Maintainer [appointed], Software Carpentry R for Reproducible Scientific Analyses lesson \hfill 2018 - 2022  
 Instructor trainer [appointed], The Carpentries \hfill 2017 - present  
 
+\textbf{Peer Reviewer} \hfill 2020-2024  
+21 articles, 12 journals, including _Proceedings of the Royal Society B_, _Journal of Open Source Software_, and _PLOS ONE_
+
 ### University of Arizona
 
 Member, \textit{ex officio} [appointed], Graduate Council \hfill 2022 - present  
