@@ -3,8 +3,8 @@
 ### Federal
 
 \begin{itemize}[leftmargin=0cm]
-\item[] Collaborative Research: HDR DSC: Building Capacity in Data Science through Biodiversity, Conservation, and General Education. Kathleen Prudic (PI), \textbf{Jeffrey Oliver (Co-PI)} (33\% effort), Ellen Bledsoe (Co-PI). National Science Foundation Award \#2122967. Total awarded \$867,145. 2021-2025
-\item[] Lessons for Librarians in Open Science: A gentle, hands-on introduction to containers and virtual machines. Fernando Rios (PI), \textbf{Jeffrey Oliver (Co-PI)} (33\% effort). Institute of Museum and Library Services sub-award through the University of California, Los Angeles (UCLA). Total awarded \$10,000. 2024-2025
+\item[] Collaborative Research: HDR DSC: Building Capacity in Data Science through Biodiversity, Conservation, and General Education. Kathleen Prudic (PI), \textbf{Jeffrey Oliver (Co-PI)} (33\% effort), Ellen Bledsoe (Co-PI). National Science Foundation Award \#2122967. Total awarded \$867,145. 2021-2025.
+\item[] Lessons for Librarians in Open Science: A gentle, hands-on introduction to containers and virtual machines. Fernando Rios (PI), \textbf{Jeffrey Oliver (Co-PI)} (33\% effort). Institute of Museum and Library Services sub-award through the University of California, Los Angeles (UCLA). Total awarded \$10,000. 2024-2025.
 \end{itemize}
 
 ## Submitted Grants/Contracts
