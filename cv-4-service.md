@@ -16,6 +16,7 @@ Member, \textit{ex officio} [appointed], Graduate Council \hfill 2022 - present
 
 ### University Libraries
 
+Member [appointed], Search committee, Business Research & Experiential Learning Librarian \hfill 2024  
 Chair [elected], Library Faculty Assembly \hfill 2023 - 2024  
 Chair [appointed], Search committee, Digital Scholarship Specialist/Librarian \hfill 2021 - 2022  
 Member [elected], University Libraries Continuing Status & Promotion Committee \hfill 2020 - 2022  
