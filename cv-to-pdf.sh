@@ -9,6 +9,9 @@
 # texlive
 # texlive-xelatex
 
+# 2024-12-05 Moved to Latin Modern Roman font (from EB Garamond), as the latter 
+# was causing problems
+
 # Make sure bib/publications.bib and apa-cv.csl exist (they are referenced by
 # cv-5-publications.md)
 
@@ -52,7 +55,8 @@ then
   # Workaround is to create temporary tex file and then convert to md
   TEXFILE="tmp-pubs.tex"
   TEXTFILE="tmp-pubs.md"
-  pandoc -f markdown cv-5-publications.md -o $TEXFILE --csl=apa-cv.csl --bibliography=bib/publications.bib --filter=pandoc-citeproc
+  # pandoc -f markdown cv-5-publications.md -o $TEXFILE --csl=apa-cv.csl --bibliography=bib/publications.bib --filter=pandoc-citeproc
+  pandoc -f markdown cv-5-publications.md -o $TEXFILE --csl=apa-cv.csl --bibliography=bib/publications.bib --citeproc
   pandoc $TEXFILE -o $TEXTFILE
 
   # Run sed in place to bold all occurrences of Oliver, J. C.
