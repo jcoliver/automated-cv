@@ -8,7 +8,7 @@ Maintainer [appointed], Software Carpentry R for Reproducible Scientific Analyse
 Instructor trainer [appointed], The Carpentries \hfill 2017 - present  
 
 \textbf{Peer Reviewer} \hfill 2020-2024  
-21 articles, 12 journals, including _Proceedings of the Royal Society B_, _Journal of Open Source Software_, and _PLOS ONE_
+24 articles, 12 journals, including _Proceedings of the Royal Society B_, _Journal of Open Source Software_, and _PLOS ONE_
 
 ### University of Arizona
 
