@@ -14,7 +14,7 @@
 
 # Indication of which files to use for start and end of CV
 # possible values: csp, light, cues, imls, ul, long
-VERSION="long"
+VERSION="csp"
 
 # Only want full list of publications for some versions
 if [[ "$VERSION" == "light" ]] || [[ "$VERSION" == "csp" ]] || [[ "$VERSION" == "ul" ]] || [[ "$VERSION" == "long" ]]
@@ -70,6 +70,9 @@ then
   # Stitch the sections together to create single file
   cat cv-1-start-$VERSION.md $TEXTFILE cv-3-end-$VERSION.md > cv-full.md
 
+  # Underscores in a URL need to be escaped
+  sed -i 's/ca2031_en/ca2031\_en/g' cv-full.md
+
   # Remove temporary text file of publications
   rm $TEXTFILE
   rm $TEXFILE
@@ -82,4 +85,4 @@ fi
 pandoc -f markdown cv-full.md -o OliverJC-CV-$VERSION.pdf --pdf-engine=xelatex
 
 # Remove temporary markdown CV
-rm cv-full.md
+#rm cv-full.md
