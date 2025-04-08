@@ -55,8 +55,8 @@ then
   # Workaround is to create temporary tex file and then convert to md
   TEXFILE="tmp-pubs.tex"
   TEXTFILE="tmp-pubs.md"
-  pandoc -f markdown cv-5-publications.md -o $TEXFILE --csl=apa-cv.csl --bibliography=bib/publications.bib --filter=pandoc-citeproc
-  # pandoc -f markdown cv-5-publications.md -o $TEXFILE --csl=apa-cv.csl --bibliography=bib/publications.bib --citeproc
+  # pandoc -f markdown cv-5-publications.md -o $TEXFILE --csl=apa-cv.csl --bibliography=bib/publications.bib --filter=pandoc-citeproc
+  pandoc -f markdown cv-5-publications.md -o $TEXFILE --csl=apa-cv.csl --bibliography=bib/publications.bib --citeproc
   pandoc $TEXFILE -o $TEXTFILE
 
   # Run sed in place to bold all occurrences of Oliver, J. C.
@@ -65,9 +65,9 @@ then
   # Assumes lines starting with J. C. or C. will *always* be part of citation
   # Tried whitespace matches, but sed doesn't recognize newline as whitespace
   sed -i 's/Oliver,$/\*\*Oliver,\*\*/g' $TEXTFILE
-  sed -i 's/^J. C./\*\*J. C.\*\*/g' $TEXTFILE
+  sed -i 's/^J\. C\./\*\*J. C.\*\*/g' $TEXTFILE
   sed -i 's/Oliver, J.$/\*\*Oliver, J.\*\*/g' $TEXTFILE
-  sed -i 's/^C./\*\*C.\*\*/g' $TEXTFILE
+  sed -i 's/^C\./\*\*C\.\*\*/g' $TEXTFILE
 
   # Also sed to get name added for BioTIME paper
   sed -i 's/others. (2018). BioTIME/\*\*Oliver, J. C.\*\* and 263 additional authors. (2018). BioTIME/g' $TEXTFILE
