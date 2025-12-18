@@ -75,9 +75,6 @@ then
   # Change author ending of Miadlikowska et al. 2014 to match BioTIME format
   sed -i 's/others. (2014). Multigene/and 20 additional authors. (2014). Multigene/g' $TEXTFILE
 
-  # Change future years to italicized "in press"
-  sed -i 's/(2025)/(*in press*)/g' $TEXTFILE
-  
   # Change parenthetical ds2f to upper case
   sed -i 's/(ds2f)/(DS2F)/g' $TEXTFILE
   
